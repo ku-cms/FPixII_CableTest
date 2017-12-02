@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Nov 16 16:40:11 2017
+# Process ID: 2848
+# Current directory: C:/SharedProjects/bert_111717 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5132 C:\SharedProjects\bert_111717 - Copy\bert_111717.xpr
+# Log file: C:/SharedProjects/bert_111717 - Copy/vivado.log
+# Journal file: C:/SharedProjects/bert_111717 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SharedProjects/bert_111717 - Copy/bert_111717.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_cell -type module -reference data_recovery data_recovery_0
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz_0/clk_out1 (20 MHz)" }  [get_bd_pins data_recovery_0/clk]
+set_property location {5.5 1279 111} [get_bd_cells data_recovery_0]
+set_property location {5.5 1673 115} [get_bd_cells data_recovery_0]
+set_property location {4.5 1225 106} [get_bd_cells data_recovery_0]
+connect_bd_net [get_bd_pins util_ds_buf_1/IBUF_OUT] [get_bd_pins data_recovery_0/data]
+undo
+undo
+undo
+undo
+delete_bd_objs [get_bd_nets rst_clk_wiz_0_20M_peripheral_aresetn] [get_bd_cells rst_clk_wiz_0_20M]
+connect_bd_net [get_bd_ports reset] [get_bd_pins data_recovery_0/rst]
+connect_bd_net [get_bd_ports reset] [get_bd_pins led_ctl_0/rst_clk_rx]
+connect_bd_net [get_bd_pins data_recovery_0/data] [get_bd_pins util_ds_buf_1/IBUF_OUT]
+startgroup
+create_bd_port -dir O -from 1 -to 0 sdata_test
+connect_bd_net [get_bd_pins /data_recovery_0/sdata] [get_bd_ports sdata_test]
+endgroup
+generate_target all [get_files {{C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}}]
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}}]
+launch_runs design_1_data_recovery_0_0_synth_1
+wait_on_run design_1_data_recovery_0_0_synth_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS18 [get_ports [list {sdata_test[1]} {sdata_test[0]}]]
+place_ports {sdata_test[1]} BA21
+startgroup
+set_property package_pin "" [get_ports [list  {sdata_test[1]}]]
+place_ports {sdata_test[0]} BA21
+endgroup
+set_property package_pin "" [get_ports [list  {sdata_test[1]}]]
+open_bd_design {C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_ports rom_test]
+generate_target all [get_files {{C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/design_1.bd}}]
+refresh_design
+set_property IOSTANDARD LVCMOS18 [get_ports [list {sdata_test[1]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {sdata_test[0]}]]
+place_ports {sdata_test[1]} BB23
+place_ports {sdata_test[0]} BA21
+save_constraints
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
