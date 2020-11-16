@@ -1,0 +1,349 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 243.539 ; gain = 14.152
+Command: synth_design -top design_1_wrapper -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t-ffg1761'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t-ffg1761'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3924 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 331.777 ; gain = 73.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:14' bound to instance 'design_1_i' of component 'design_1' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:34]
+INFO: [Synth 8-3491] module 'design_1_blk_mem_gen_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'design_1_blk_mem_gen_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_blk_mem_gen_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_c_counter_binary_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_c_counter_binary_0_0_stub.vhdl:5' bound to instance 'c_counter_binary_0' of component 'design_1_c_counter_binary_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_c_counter_binary_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_clk_wiz_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_data_recovery_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_data_recovery_0_0_stub.vhdl:5' bound to instance 'data_recovery_0' of component 'design_1_data_recovery_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'design_1_data_recovery_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_data_recovery_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_led_ctl_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_led_ctl_0_0_stub.vhdl:5' bound to instance 'led_ctl_0' of component 'design_1_led_ctl_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ctl_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_led_ctl_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_0_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_util_ds_buf_0_0_stub.vhdl:5' bound to instance 'util_ds_buf_0' of component 'design_1_util_ds_buf_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_util_ds_buf_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_1_0' declared at 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_util_ds_buf_1_0_stub.vhdl:5' bound to instance 'util_ds_buf_1' of component 'design_1_util_ds_buf_1_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_1_0' [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/realtime/design_1_util_ds_buf_1_0_stub.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (1#1) [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (2#1) [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 371.227 ; gain = 112.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 371.227 ; gain = 112.914
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp17/design_1_led_ctl_0_0_in_context.xdc] for cell 'design_1_i/led_ctl_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp17/design_1_led_ctl_0_0_in_context.xdc] for cell 'design_1_i/led_ctl_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp19/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp19/design_1_blk_mem_gen_0_0_in_context.xdc] for cell 'design_1_i/blk_mem_gen_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp21/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp21/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/c_counter_binary_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp27/design_1_data_recovery_0_0_in_context.xdc] for cell 'design_1_i/data_recovery_0'
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp27/design_1_data_recovery_0_0_in_context.xdc] for cell 'design_1_i/data_recovery_0'
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'test_out'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'douta_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'douta_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'douta_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'rom_out[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'rom_out[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'rom_out[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'dataout_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'dataout_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'rom_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'rom_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'dataout_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'sdata_test[1]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'sdata_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'sdata_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'dataout_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'sdata_test[1]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[7]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[6]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[5]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[4]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[3]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[2]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[1]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'fifoOUT_test[0]'. [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc:81]
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SharedProjects/bert_111717 - Copy/bert_111717.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 766.199 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clock_n. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc}, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clock_n. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc}, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for clock_p. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc}, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clock_p. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp15/design_1_clk_wiz_0_0_in_context.xdc}, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for diffout_n[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc}, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diffout_n[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc}, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for diffout_p[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diffout_p[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp23/design_1_util_ds_buf_0_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for diffin_n[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc}, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diffin_n[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc}, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for diffin_p[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for diffin_p[0]. (constraint file  {C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/.Xil/Vivado-4888-PHSX-79FJZ32/dcp25/design_1_util_ds_buf_1_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/data_recovery_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/led_ctl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out1' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out2' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out3' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out4' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out4/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_blk_mem_gen_0_0      |         1|
+|2     |design_1_c_counter_binary_0_0 |         1|
+|3     |design_1_clk_wiz_0_0          |         1|
+|4     |design_1_data_recovery_0_0    |         1|
+|5     |design_1_led_ctl_0_0          |         1|
+|6     |design_1_util_ds_buf_0_0      |         1|
+|7     |design_1_util_ds_buf_1_0      |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |design_1_blk_mem_gen_0_0_bbox      |     1|
+|2     |design_1_c_counter_binary_0_0_bbox |     1|
+|3     |design_1_clk_wiz_0_0_bbox          |     1|
+|4     |design_1_data_recovery_0_0_bbox    |     1|
+|5     |design_1_led_ctl_0_0_bbox          |     1|
+|6     |design_1_util_ds_buf_0_0_bbox      |     1|
+|7     |design_1_util_ds_buf_1_0_bbox      |     1|
+|8     |IBUF                               |     1|
+|9     |OBUF                               |    12|
++------+-----------------------------------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |    47|
+|2     |  design_1_i |design_1 |    34|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 766.199 ; gain = 112.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 766.199 ; gain = 507.887
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+38 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 784.500 ; gain = 540.961
+INFO: [Common 17-1381] The checkpoint 'C:/SharedProjects/bert_111717 - Copy/bert_111717.runs/synth_1/design_1_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 784.500 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 17:06:59 2017...
